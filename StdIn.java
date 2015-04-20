@@ -6,17 +6,14 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 public final class StdIn {
 
-    // it doesn't make sense to instantiate this class
+    
     private StdIn() { }
 
     private static Scanner scanner;
  
-    /*** begin: section (1 of 2) of code duplicated from In to StdIn */
-    
     // assume Unicode UTF-8 encoding
     private static final String CHARSET_NAME = "UTF-8";
 
-    // assume language = English, country = US for consistency with System.out.
     private static final Locale LOCALE = Locale.US;
 
     // the default token separator; we maintain the invariant that this value
