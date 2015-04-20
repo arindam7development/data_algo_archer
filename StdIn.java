@@ -26,11 +26,7 @@ public final class StdIn {
     // used to read the entire input
     private static final Pattern EVERYTHING_PATTERN = Pattern.compile("\\A");
 
-    /*** end: section (1 of 2) of code duplicated from In to StdIn */
-
-    /*** begin: section (2 of 2) of code duplicated from In to StdIn,
-      *  with all methods changed from "public" to "public static" ***/
-
+    
    /**
      * Is the input empty (except possibly for whitespace)? Use this
      * to know whether the next call to {@link #readString()}, 
