@@ -27,13 +27,7 @@ public final class StdIn {
     private static final Pattern EVERYTHING_PATTERN = Pattern.compile("\\A");
 
     
-   /**
-     * Is the input empty (except possibly for whitespace)? Use this
-     * to know whether the next call to {@link #readString()}, 
-     * {@link #readDouble()}, etc will succeed.
-     * @return true if standard input is empty (except possibly
-     *     for whitespae), and false otherwise
-     */
+  
     public static boolean isEmpty() {
         return !scanner.hasNext();
     }
