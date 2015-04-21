@@ -28,7 +28,7 @@ void push(struct node** head_ref, int new_data)
 /* Given a node prev_node, insert a new node after the given prev_node */
 void insertAfter(struct node* prev_node, int new_data)
 {
-    /*1. check if the given prev_node is NULL */
+    
     if (prev_node == NULL)
     {
       printf("the given previous node cannot be NULL");
