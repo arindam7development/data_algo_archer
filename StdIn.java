@@ -11,7 +11,7 @@ public final class StdIn {
 
     private static Scanner scanner;
  
-    // assume Unicode UTF-8 encoding
+    
     private static final String CHARSET_NAME = "UTF-8";
 
     private static final Locale LOCALE = Locale.US;
