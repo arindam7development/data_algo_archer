@@ -37,7 +37,7 @@ void deleteList(struct node** head_ref)
   of the list. */
 void push(struct node** head_ref, int new_data)
 {
-    /* allocate node */
+    
     struct node* new_node =
             (struct node*) malloc(sizeof(struct node));
  
