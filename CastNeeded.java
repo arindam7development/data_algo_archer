@@ -12,7 +12,7 @@ public class CastNeeded {
 	//	b = i;  EXPECT COMPILE ERROR
 		b = (byte)i; // with cast, i gets 2
 		System.out.println("b =" + b);
-		Integer i1 = new Integer(42);
+		Integer i1 = new Integer(77);
 		System.out.println(i1);
 		}
 
