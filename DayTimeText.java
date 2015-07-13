@@ -15,6 +15,7 @@ public class DayTimeText {
 		else
 		hostName = argv[0];
 		try {
+		//calculate time on remote server
 		Socket sock = new Socket(hostName, TIME_PORT);
 		BufferedReader is = new BufferedReader(new
 		InputStreamReader(sock.getInputStream( )));
