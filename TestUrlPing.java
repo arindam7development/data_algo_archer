@@ -4,7 +4,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 /**
- * Created by AR277544 on 7/16/2015.
+ * Created by Arindam on 7/16/2015.
  */
 public class TestUrlPing {
 
