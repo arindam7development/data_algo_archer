@@ -13,7 +13,7 @@ public class TestTogether {
         List<String> elephantList = Arrays.asList(url_input.split(","));
         String temp = null;
         HashMap<String,Integer> hmap = new HashMap<String,Integer>();
-
+               System.out.println(elephantList.size());
         for (int i=0;i<elephantList.size();i++){
             temp = elephantList.get(i);
             try {
