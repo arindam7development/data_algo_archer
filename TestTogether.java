@@ -26,7 +26,7 @@ public class TestTogether {
                 System.out.println(temp+" "+"says"+" "+res_msg+" "+code+" "+"Success");
                 hmap.put(temp,code);
             } catch (Exception e) {
-
+               hmap.put(temp , e.hashCode());
             }
         }
 
