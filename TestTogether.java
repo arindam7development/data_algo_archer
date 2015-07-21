@@ -5,15 +5,15 @@ import java.util.*;
 /**
  * Created by AR277544 on 7/16/2015.
  */
-public class TestTogether {
+public class New_test {
 
     public static void main(String args[]){
-        String url_input ="https://www.google.com,https://www.youtube.com,https://www.linkedin.com";
+        String url_input ="https://www.google.com,https://www.youtube.com,https://www.linkedin.com,https://www.yahoo.co.in";
 
         List<String> elephantList = Arrays.asList(url_input.split(","));
         String temp = null;
-        HashMap<String,Integer> hmap = new HashMap<String,Integer>();
-               System.out.println(elephantList.size());
+        HashMap<String,String> hmap = new HashMap<String,String>();
+        System.out.println(elephantList.size());
         for (int i=0;i<elephantList.size();i++){
             temp = elephantList.get(i);
             try {
@@ -21,12 +21,19 @@ public class TestTogether {
                 HttpURLConnection connection = (HttpURLConnection)url.openConnection();
                 connection.setRequestMethod("GET");
                 connection.connect();
-                int code = connection.getResponseCode();
+                Integer code = connection.getResponseCode();
                 String res_msg = connection.getResponseMessage();
-                System.out.println(temp+" "+"says"+" "+res_msg+" "+code+" "+"Success");
-                hmap.put(temp,code);
+                System.out.println(temp+" "+"says"+" "+res_msg+" "+code.toString()+" "+"Success");
+                hmap.put(temp,code.toString());
             } catch (Exception e) {
-               hmap.put(temp , e.hashCode());
+                 String msg= e.getMessage();
+                System.out.println(msg+"****Exception****");
+                Integer in = e.hashCode();
+                in.toString().concat(msg);
+                System.out.println(in.toString().concat(msg));
+                String test_hash=in.toString().concat(msg).substring(8);
+                System.out.println("Test hash : "+test_hash);
+                hmap.put(temp ,test_hash);
             }
         }
 
@@ -42,6 +49,6 @@ public class TestTogether {
 
 
 
-        }
+    }
 
 }
