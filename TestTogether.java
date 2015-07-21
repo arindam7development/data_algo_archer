@@ -27,13 +27,8 @@ public class New_test {
                 hmap.put(temp,code.toString());
             } catch (Exception e) {
                  String msg= e.getMessage();
-                System.out.println(msg+"****Exception****");
-                Integer in = e.hashCode();
-                in.toString().concat(msg);
-                System.out.println(in.toString().concat(msg));
-                String test_hash=in.toString().concat(msg).substring(8);
-                System.out.println("Test hash : "+test_hash);
-                hmap.put(temp ,test_hash);
+                
+                hmap.put(temp ,msg);
             }
         }
 
